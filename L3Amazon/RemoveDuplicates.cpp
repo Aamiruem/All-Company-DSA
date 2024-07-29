@@ -1,13 +1,32 @@
-// #include <bits/std++.h>
+#include <bits/std++.h>
+#include <vector>
+using namespace std;
+int mergeSortedArray(vector<int> nums)
+{
+    int i = 0;
+    for (int j = 1; j < nums.size(); j++)
+    {
 
-// #include<iostream>
-// using namespace std;
-// int mergeSortedArray(vector<int> nums){
-//     int n = nums.size();
-//     vector<int> temp(n);
-//     int mid = n/2;
-//     mergeSort(nums, temp, 0, mid-1);
-//     mergeSort(nums, temp, mid, n-1);
-//     merge(nums, temp, 0, mid-1, n-1);
-//     return nums;
-// }
+        if (nums[i] < nums[j])
+        {
+            int temp = num[i + 1];
+            nums[i + 1] = nums[j];
+            nums[j] = temp;
+            i++;
+        }
+    }
+    return i+1;
+
+}
+int main(){
+    vector<int> nums(7);
+    nums[0]=1;
+    nums[1]=1;
+    nums[2]=1;
+    nums[3]=1;
+    nums[4]=2;
+    nums[5]=2;
+    nums[6]=3;
+    cout<<mergeSortedArray(nums);
+    
+}
