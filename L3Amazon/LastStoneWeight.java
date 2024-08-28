@@ -1,4 +1,4 @@
-import java.util.Collections;
+import java.util.Collections; 
 import java.util.PriorityQueue;
 
 public class LastStoneWeight {
@@ -19,7 +19,8 @@ public class LastStoneWeight {
                 pq.add(Math.abs(first-second));
             }
         }
-        return pq.isEmpty()?0:pq.poll();
+        int i = pq.isEmpty()?0:pq.poll();
+        return i;
     }
 
     public static void main(String[] args) {
