@@ -1,3 +1,4 @@
+package L4AmazonMedium;
 // LinkedList
 // package L4AmazonMedium;
 
@@ -11,7 +12,7 @@ class ListNode {
 
 }
 
-public class PartitionLists {
+public class PartitionList {
 
     public static void main(String[] args) {
 
