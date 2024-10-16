@@ -12,7 +12,7 @@ class TreeNode {
     }
 }
 
-public class BinaryTreeNodesAtDistanceK {
+public class BinaryTreeNodesAtDistanceKs {
     // Function to find nodes at distance k from a given node
     public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
         List<Integer> result = new ArrayList<>();
