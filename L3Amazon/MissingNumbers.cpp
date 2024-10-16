@@ -42,30 +42,31 @@
 
 
 
-// #include <bits/stdc++.h>
-// using namespace std;
+#include <bits/stdc++.h>
+#include <unordered_set>
+using namespace std;
 
-// vector<int> missingNumbers(vector<int> &nums, vector<int> &brr) {
-//     unordered_set<int> brrSet(brr.begin(), brr.end());
-//     vector<int> missing;
+vector<int> missingNumbers(vector<int> &nums, vector<int> &brr) {
+    unordered_set<int> brrSet(brr.begin(), brr.end());
+    vector<int> missing;
 
-//     for (int num : nums) {
-//         if (brrSet.find(num) == brrSet.end()) {
-//             missing.push_back(num);
-//         }
-//     }
-//     return missing;
-// }
+    for (int num : nums) {
+        if (brrSet.find(num) == brrSet.end()) {
+            missing.push_back(num);
+        }
+    }
+    return missing;
+}
 
-// int main() {
-//     vector<int> nums = {1, 2, 4, 6};
-//     vector<int> brr = {1, 2, 3, 5};
+int main() {
+    vector<int> nums = {1, 2, 4, 6};
+    vector<int> brr = {1, 2, 3, 5};
 
-//     vector<int> ans = missingNumbers(nums, brr);
-//     for (int i = 0; i < ans.size(); i++) {
-//         cout << ans[i] << " ";
-//     }
-//     cout << endl;
+    vector<int> ans = missingNumbers(nums, brr);
+    for (int i = 0; i < ans.size(); i++) {
+        cout << ans[i] << " ";
+    }
+    cout << endl;
 
-//     return 0;
-// }
+    return 0;
+}

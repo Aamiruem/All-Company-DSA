@@ -1,7 +1,7 @@
 package L4AmazonMedium;
 
 import java.util.TreeMap;
-public class MeetingRooms2 {
+public class MeetingRooms {
 
     public static int minMeetings(int arr[][]) {
         TreeMap<Integer, Integer> temp = new TreeMap<>();

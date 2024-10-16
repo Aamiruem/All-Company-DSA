@@ -31,13 +31,13 @@
 
 package L4AmazonMedium;
 
-class CarPooling {
+public class carPooling {
     //using the constructors methods 
     private final int[][] trips;
     private int capacity;
 
     // Constructor to initialize the trips and capacity
-    public CarPooling(int[][] trips, int capacity) {
+    public carPooling(int[][] trips, int capacity) {
         this.trips = trips;
         this.capacity = capacity;
     }
@@ -60,7 +60,7 @@ class CarPooling {
         int capacity = 5;
 
         // Create an instance of CarPooling
-        CarPooling carPooling = new CarPooling(trips, capacity);
+        carPooling carPooling = new carPooling(trips, capacity);
 
         // Check if car pooling is possible
         System.out.println(carPooling.isCarPoolingPossible()); // Output: true
