@@ -12,7 +12,6 @@ public class minimumNoOfSwaps {
                 count1++;
             }
         }
-
         // If the difference between count of '0's and '1's is greater than 1, return -1
         if (Math.abs(count0 - count1) > 1) {
             return -1;
